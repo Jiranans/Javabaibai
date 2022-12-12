@@ -3,7 +3,7 @@ package int101.array;
 
 
 public class Student {
-
+   private static final int SIZE = 10; ชื่อเป็นตัวใหญ่ ธรรมเนียม
     private static boolean[] allId = new boolean[10];
     private int id;
     private String name;
