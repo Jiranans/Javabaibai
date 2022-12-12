@@ -1,0 +1,30 @@
+
+package int101.array;
+
+
+public class Student {
+
+    private static boolean[] allId = new boolean[10];
+    private int id;
+    private String name;
+
+    public Student(String name) {
+        this.name = name;
+        do { id = (int) (Math.random() * 10); }
+        while( allId [id]); allId [id] = true;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", name=" + name + '}';
+    }
+
+run แล้ว id แรนด้อมมาห้ามซ้ำ No คือ 1
